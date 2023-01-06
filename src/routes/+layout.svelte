@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from './components/Header.svelte';
+	import Header from '../components/Header.svelte';
 	import './styles.css';
 
 	let header: any;
@@ -21,7 +21,6 @@
 </div>
 
 <style>
-
 	@media (min-width: 480px) {
 
 	}

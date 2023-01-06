@@ -1,7 +1,6 @@
 <script>
-	import Counter from './components/Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
-	import Hero from './components/Hero.svelte';
+	import Hero from '../components/Hero.svelte';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
@@ -15,22 +14,10 @@
 
 <section>
 	<Hero />
-
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
-	<Counter />
 </section>
 
 <style>
+	section {
+		height: 100%;
+	}
 </style>

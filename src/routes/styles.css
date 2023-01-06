@@ -1,19 +1,20 @@
 @import '@fontsource/fira-mono';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
 	--font-body: 'Poppins', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ffd601;
-	--color-theme-2: #4075a6;
+	--font-title: 'Nunito', sans-serif;
+	--color-bg-0: rgb(255, 255, 255);
+	--color-bg-1: #260835;
+	--color-theme-1: rgb(246, 25, 128);
+	--color-theme-2: #3e1465;
 	--color-text: rgb(0, 0, 0);
 	--color-text-2: rgb(231, 231, 231);
+	--color-text-3: rgb(246, 25, 128);
+	--text-shadow-0: 0 0 10px #f9197f25;
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
-	font-family: var(--font-body);
+	font-family: var(--font-title);
 	color: var(--color-text);
 }
 

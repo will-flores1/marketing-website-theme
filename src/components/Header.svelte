@@ -69,7 +69,6 @@
 
 <style>
 	header {
-		background-color: rgb(0, 0, 0);
 		position: fixed;
 		width: 100%;
 		top: 0;
@@ -89,12 +88,12 @@
 	.logo-container {
 		display: flex;
 		font-size: 2.3rem;
-		color: var(--color-theme-1);
+		color: var(--color-theme-2);
 	}
 	
 	.logo-container-websites-name {
 		font-weight: 600;
-		color: rgb(248, 248, 248);
+		color: var(--color-theme-2);
 	}
 		
 	nav {
@@ -125,10 +124,10 @@
 
 	nav a {
 		padding: 0 1rem;
-		color: var(--color-text-2);
-		font-weight: 500;
+		color: var(--color-text-3);
+		font-weight: 600;
 		letter-spacing: 1px;
-		font-size: 1.0625rem;
+		font-size: 1.1625rem;
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;

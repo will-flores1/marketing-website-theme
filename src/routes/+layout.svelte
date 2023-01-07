@@ -1,8 +1,7 @@
 <script lang="ts">
-	import Section from '../components/Section.svelte';
+	import Footer from '../components/Footer.svelte';
 	import Header from '../components/Header.svelte';
 	import './styles.css';
-	import SectionTwo from '../components/SectionTwo.svelte';
 
 	let header: any;
 	$: console.log(header);
@@ -11,34 +10,18 @@
 <svelte:body on:scroll={header} />
 
 <div class="app">
-	<div class="main">
-		<Header />
+	<Header />
 
-		<section>
-			<slot />
-		</section>
-	</div>
-	<Section />
-	<SectionTwo />
+	<section>
+		<slot />
+	</section>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	<Footer />
 </div>
 
 <style>
-	.app {
-		height: 100vh;
-	}
-	.main {
-		height: 100%;
-		background: url(../lib/images/background-image.jpg) top right no-repeat;
-		background-attachment: fixed;
-		/* background-size: 100%; */
-		background-size: cover;
-	}
 	footer {
-		background-color: black;
+		background-color: white;
 	}
 	@media (min-width: 480px) {
 	}

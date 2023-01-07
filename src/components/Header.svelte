@@ -75,8 +75,8 @@
 		transition: transform 300ms linear;
 		z-index: 1;
 		backdrop-filter: blur(10px);
-		background-color: rgba(0, 0, 0, 0.101);
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.588);
+		background-color: rgba(0, 0, 0, 0.251);
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.772);
 	}
 
 	.nav-container {

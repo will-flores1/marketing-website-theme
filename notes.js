@@ -1,6 +1,7 @@
 const notes = {
 	company: {
-		name: 'rocketlabs',
+		name: 'rocketlabsplus',
+		description: 'web design agency',
 		category: 'digital studio'
 	},
 	taglines: [

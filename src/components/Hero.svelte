@@ -22,7 +22,7 @@
 	.hero {
 		width: 80%;
 		max-width: 60rem;
-		margin: 10rem auto;
+		margin: 15rem auto;
 		text-align: center;
 	}
 
@@ -32,7 +32,7 @@
 		/* font-size: 4.3rem; */
 		font-weight: 600;
 		color: rgb(251, 251, 251);
-		text-shadow: var(--text-shadow-0);
+		/* text-shadow: var(--text-shadow-0); */
 		animation: fadeIn 0.5s;
 	}
 	p {

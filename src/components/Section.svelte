@@ -16,15 +16,14 @@
 
 <style>
 	.wrap {
-		height: 50%;
+		height: 50vh;
 		width: 100%;
-		overflow: auto;
 		background-color: black;
-		overflow: hidden;
+		overflow: auto;
+		display: flex;
 	}
 
 	.left-div {
-		float: left;
 		width: 49.9%;
 		height: 99.8%;
 		color: white;
@@ -33,11 +32,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: start;
-		/* padding: 0 4rem; */
 	}
 	.right-div {
-		float: right;
 		width: 49.8%;
 		height: 99.8%;
 		display: flex;

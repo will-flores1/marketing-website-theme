@@ -1,4 +1,6 @@
 <script>
+	import Section from '../components/Section.svelte';
+	import SectionTwo from '../components/SectionTwo.svelte';
 	import Hero from '../components/Hero.svelte';
 </script>
 
@@ -11,8 +13,20 @@
 </svelte:head>
 
 <section>
-	<Hero />
+	<div class="background-img">
+		<Hero />
+	</div>
+	<Section />
+	<SectionTwo />
 </section>
 
 <style>
+	.background-img {
+		height: 100vh;
+		/* height: 100%; */
+		background: url(../lib/images/background-image.jpg) top right no-repeat;
+		background-attachment: fixed;
+		/* background-size: 100%; */
+		background-size: cover;
+	}
 </style>

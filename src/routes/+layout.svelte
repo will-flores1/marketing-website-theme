@@ -2,6 +2,7 @@
 	import Section from '../components/Section.svelte';
 	import Header from '../components/Header.svelte';
 	import './styles.css';
+	import SectionTwo from '../components/SectionTwo.svelte';
 
 	let header: any;
 	$: console.log(header);
@@ -18,6 +19,7 @@
 		</section>
 	</div>
 	<Section />
+	<SectionTwo />
 
 	<footer>
 		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>

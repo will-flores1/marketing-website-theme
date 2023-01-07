@@ -10,6 +10,7 @@
 	--color-text: rgb(0, 0, 0);
 	--color-text-1: rgb(251, 251, 251);
 	--text-shadow-0: 0 0 15px #f9197e7b;
+	--text-shadow-1: 0 0 15px rgb(9, 44, 158);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-title);

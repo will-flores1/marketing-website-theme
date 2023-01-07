@@ -74,8 +74,11 @@
 		top: 0;
 		transition: transform 300ms linear;
 		z-index: 1;
+		backdrop-filter: blur(10px);
+		background-color: rgba(0, 0, 0, 0.101);
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.588);
 	}
-	
+
 	.nav-container {
 		max-width: 132.25rem;
 		margin: auto;
@@ -88,14 +91,15 @@
 	.logo-container {
 		display: flex;
 		font-size: 2.3rem;
+		font-weight: 300;
 		color: var(--color-text-1);
 	}
-	
+
 	.logo-container-websites-name {
 		font-weight: 600;
 		color: var(--color-text-1);
 	}
-		
+
 	nav {
 		display: flex;
 		align-items: center;

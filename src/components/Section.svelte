@@ -38,7 +38,7 @@
 	}
 	.right-div {
 		float: right;
-		width: 50%;
+		width: 49.8%;
 		height: 99.8%;
 		display: flex;
 		justify-content: center;
@@ -46,14 +46,14 @@
 	}
 
 	.astronaut-img {
-		max-width: 20rem;
+		width: clamp(10rem, 20vw, 25rem);
 		border-radius: 1rem 0.7rem 1rem 1rem;
 		box-shadow: var(--text-shadow-0);
 	}
 
 	.tag-line {
 		width: fit-content;
-		font-size: 3.2vw;
+		font-size: clamp(2rem, 3.2vw, 10rem);
 		font-weight: 600;
 		padding: 0 3rem;
 		/* margin: 0 auto; */
@@ -61,7 +61,7 @@
 
 	a {
 		width: fit-content;
-		font-size: 2vw;
+		font-size: clamp(1.3rem, 2.5vw, 8rem);
 		font-weight: 500;
 		padding: 0 3rem;
 		text-decoration: none;
@@ -71,5 +71,8 @@
 	a:hover {
 		color: yellow;
 		cursor: pointer;
+	}
+
+	@media (min-width: 1006px) {
 	}
 </style>

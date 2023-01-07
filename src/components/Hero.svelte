@@ -1,14 +1,16 @@
 <script>
-	import backgroundImage from "../lib/images/background-image.jpg"
+	import backgroundImage from '../lib/images/background-image.jpg';
 </script>
 
 <section class="wrap">
-	<div class="hero-left">
-		<h1>Launch your dream website today.</h1>
-    <p>Reach more people, drive more traffic, and skyrocket profits - all at the price of your dreams.</p>
+	<div class="hero">
+		<h1>Launch your dreams today.</h1>
+		<p>Stop wrestling with website builders</p>
+		<a href="/contact">
+			<input class="button-1" type="button" value="get started" />
+		</a>
 	</div>
-	<div class="hero-right"></div>
-  <div></div>
+	<div />
 </section>
 
 <style>
@@ -16,33 +18,49 @@
 		width: 100%;
 		overflow: auto;
 	}
-  
-  .hero-left {
-		float: left;
-		width: 50%;
 
-    max-width: 60rem;
-    margin: 10rem auto;
-    text-align: center;
-  }
-	.hero-right {
-		float: right;
-		width: 50%;
+	.hero {
+		width: 80%;
+		max-width: 60rem;
+		margin: 10rem auto;
+		text-align: center;
 	}
 
 	h1 {
 		/* font-family: var(--font-body); */
-		font-size: 4.3rem;
+		font-size: clamp(2.5rem, 12vw, 6.5rem);
+		/* font-size: 4.3rem; */
 		font-weight: 600;
 		color: rgb(251, 251, 251);
-    text-shadow: var(--text-shadow-0);
+		text-shadow: var(--text-shadow-0);
 		animation: fadeIn 0.5s;
 	}
-  p {
-    font-size: 2.2rem;
-    padding: 1rem 0 0 0;
-    color: var(--color-text-1);
-  }
+	p {
+		font-size: clamp(1.8rem, 3vw, 1rem);
+		font-weight: 300;
+		padding: 1rem 0 0 0;
+		color: var(--color-text-1);
+		animation: fadeIn 0.5s;
+	}
+
+	.button-1 {
+		margin-top: 3rem;
+		padding: 1rem 3rem;
+		font-size: clamp(1.4rem, 1.5vw, 9rem);
+		max-width: 17rem;
+		background-color: rgba(240, 248, 255, 0);
+		border: 2px solid rgb(246, 25, 128);
+		color: rgb(246, 25, 128);
+		border-radius: 4px;
+		animation: fadeIn 0.5s;
+	}
+
+	.button-1:hover {
+		cursor: pointer;
+		background-color: rgb(246, 25, 128);
+		color: white;
+		transform: width 1s ease;
+	}
 
 	@keyframes fadeIn {
 		0% {

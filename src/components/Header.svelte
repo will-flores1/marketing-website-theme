@@ -88,12 +88,12 @@
 	.logo-container {
 		display: flex;
 		font-size: 2.3rem;
-		color: var(--color-theme-2);
+		color: var(--color-text-1);
 	}
 	
 	.logo-container-websites-name {
 		font-weight: 600;
-		color: var(--color-theme-2);
+		color: var(--color-text-1);
 	}
 		
 	nav {
@@ -119,12 +119,12 @@
 		top: -10px;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
+		border-top: var(--size) solid var(--color-text-1);
 	}
 
 	nav a {
 		padding: 0 1rem;
-		color: var(--color-text-3);
+		color: var(--color-text-1);
 		font-weight: 600;
 		letter-spacing: 1px;
 		font-size: 1.1625rem;

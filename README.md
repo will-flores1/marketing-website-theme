@@ -3,6 +3,7 @@
 [x] Fix +layout.svelte background image and set it to home page background image
 [x] Create Contact Form page
 [] Update Form submit email
+[x] Scale2d background image on scroll
 [] Fix Footer
 [] Fix Header
 [] Create Service Section

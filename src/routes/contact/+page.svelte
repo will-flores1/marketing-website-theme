@@ -84,8 +84,14 @@
 			</div>
 		</div>
 		<div>
-			<label for="message">Addtional Message</label>
-			<textarea placeholder="Your Message" class="form-text" name="message" rows="10" required />
+			<label for="message">Message or Project Description</label>
+			<textarea
+				placeholder="If it helps, some examples mention target launch date, your top goals of the project, and examples of websites you admire."
+				class="form-text"
+				name="message"
+				rows="10"
+				required
+			/>
 		</div>
 		<button type="submit">Submit Form</button>
 	</form>
@@ -175,6 +181,12 @@
 		padding: 22px 20px;
 		font-family: sans-serif;
 		min-width: 100%;
+	}
+	.form-text::placeholder {
+		color: rgba(0, 0, 0, 0.472);
+	}
+	input::placeholder {
+		color: rgba(0, 0, 0, 0.472);
 	}
 
 	button {

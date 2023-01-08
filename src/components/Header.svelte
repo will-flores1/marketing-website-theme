@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import github from '$lib/images/github.svg';
 
 	let offset = 0;
 	let tolerance = 0;
@@ -72,7 +71,7 @@
 		position: fixed;
 		width: 100%;
 		top: 0;
-		transition: transform 300ms linear;
+		transition: transform 250ms linear;
 		z-index: 1;
 		backdrop-filter: blur(10px);
 		background-color: rgba(0, 0, 0, 0.251);

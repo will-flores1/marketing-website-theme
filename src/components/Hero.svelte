@@ -1,5 +1,4 @@
 <script>
-	import backgroundImage from '../lib/images/background-image.jpg';
 </script>
 
 <section class="wrap">
@@ -17,6 +16,8 @@
 	.wrap {
 		width: 100%;
 		overflow: auto;
+		position: absolute;
+		top: 0;
 	}
 
 	.hero {

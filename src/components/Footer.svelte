@@ -2,10 +2,10 @@
 	<p>Contact Us:</p>
 	<div class="footer-opts">
 		<p>Email: example@rocketwebsites.com</p>
-		<p style="display: flex;">
+		<!-- <p style="display: flex;">
 			Tel:
-			<a href="tel:6031112298">204-023-3020</a>
-		</p>
+			<a href="tel:6031112298"></a>
+		</p> -->
 	</div>
 	<p class="license">Copyright © Drive Media. All rights reserved</p>
 </footer>

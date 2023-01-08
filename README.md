@@ -2,6 +2,9 @@
 
 [x] Fix +layout.svelte background image and set it to home page background image
 [x] Create Contact Form page
+[] Update Form submit email
+[] Fix Footer
+[] Fix Header
 [] Create Service Section
 [] Add copy headlines and descriptions
 [] Add designs

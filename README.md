@@ -1,8 +1,11 @@
 ## TO DO
 
 [x] Fix +layout.svelte background image and set it to home page background image
-[] Create Contact Form page
+[x] Create Contact Form page
 [] Create Service Section
+[] Add copy headlines and descriptions
+[] Add designs
+[] Add icons
 
 # create-svelte
 

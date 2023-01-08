@@ -2,6 +2,7 @@
 	import Section from '../components/Section.svelte';
 	import SectionTwo from '../components/SectionTwo.svelte';
 	import Hero from '../components/Hero.svelte';
+	import Services from '../components/Services.svelte';
 </script>
 
 <svelte:head>
@@ -18,6 +19,7 @@
 	</div>
 	<Section />
 	<SectionTwo />
+	<Services />
 </section>
 
 <style>

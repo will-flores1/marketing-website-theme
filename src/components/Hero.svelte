@@ -53,13 +53,13 @@
 		color: rgb(246, 25, 128);
 		border-radius: 4px;
 		animation: fadeIn 0.5s;
+		transition: all 0.3s ease;
 	}
 
 	.button-1:hover {
 		cursor: pointer;
 		background-color: rgb(246, 25, 128);
 		color: white;
-		transform: width 1s ease;
 	}
 
 	@keyframes fadeIn {

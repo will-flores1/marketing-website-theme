@@ -73,7 +73,7 @@
 
 	@media screen and (max-width: 992px) {
 		.tag-line {
-			font-size: 1.4rem;
+			font-size: 2rem;
 			padding: 1rem;
 		}
 		a {
@@ -83,15 +83,18 @@
 		.astronaut-img {
 			width: clamp(6.5rem, 20vw, 25rem);
 		}
+		.business {
+			font-size: 1.7rem;
+		}
 	}
 
-	@media screen and (min-width: 500px) {
+	@media screen and (max-width: 500px) {
 		.tag-line {
-			font-size: 2.2rem;
+			font-size: 1.5rem;
 		}
 		.business {
 			padding: 0 1rem;
-			font-size: 2rem;
+			font-size: 1.2rem;
 		}
 		a {
 			padding: 1rem;

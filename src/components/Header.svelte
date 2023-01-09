@@ -253,7 +253,7 @@
 		}
 
 		.mobile-nav-list a {
-			padding: 8rem 15rem;
+			/* padding: 8rem 15rem; */
 		}
 
 		.nav-menu-mobile {

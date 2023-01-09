@@ -1,56 +1,67 @@
 <div class="service-wrap">
-	<h1 style="text-align: start; padding:2.344rem 0 0 2.344rem;">What We Do</h1>
+	<h1 class="what-we-do">WHAT WE DO</h1>
 	<div class="cell-container">
 		<div class="cell">
 			<div class="text-wrap">
-				<h1 class="service-title">Websites</h1>
-				<p>sfljk sflkjsfklsdfl slkfjsdlfjsk k ljdsfl js klsj slfk jdsf lkf sdflk</p>
+				<h1 class="service-title">Custom website development</h1>
+				<p>
+					Back-end website development. You need a website that helps you scale and outgrow your
+					competition.
+				</p>
 			</div>
 			<p />
 		</div>
 		<div class="cell">
 			<div class="text-wrap">
-				<h1 class="service-title">Design</h1>
+				<h1 class="service-title">Website Presence</h1>
 				<p>
-					sfljk sflkjsfklsdfl slkfjsdlfjsk k ljdsfl js klsj slfk jdsf lkf sdflk fljk sflkjsfklsdfl
-					slkfjsdlfjsk k ljdsfl js klsj slfk jdsf lkf sdflk
+					Website design & development. You don't just want a website that works, you want a website
+					that builds an excellent customer experience that keeps them coming back.
 				</p>
 			</div>
 		</div>
 		<div class="cell">
 			<div class="text-wrap">
-				<h1 class="service-title">Marketing</h1>
-				<p>sfljk sflkjsfklsdfl slkfjsdlfjsk k ljdsfl js klsj slfk jdsf lkf sdflk</p>
+				<h1 class="service-title">Online Marketing</h1>
+				<p>
+					SEO optimization & content writing. You don’t want to be included in just any search, you
+					want to be noticed by the potential customers that matter most.
+				</p>
 			</div>
 		</div>
 		<div class="cell">
 			<div class="text-wrap">
-				<h1 class="service-title">Marketing</h1>
-				<p>sfljk sflkjsfklsdfl slkfjsdlfjsk k ljdsfl js klsj slfk jdsf lkf sdflk</p>
-			</div>
-		</div>
-		<div class="cell">
-			<div class="text-wrap">
-				<h1 class="service-title">Marketing</h1>
-				<p>sfljk sflkjsfklsdfl slkfjsdlfjsk k ljdsfl js klsj slfk jdsf lkf sdflk</p>
+				<h1 class="service-title">Other Services</h1>
+				<p>
+					Website maintenance and google service analytics. Ensure your website remains up-to-date,
+					secure, and healthy.
+				</p>
 			</div>
 		</div>
 	</div>
 </div>
 
 <style>
+	.what-we-do {
+		text-align: start;
+		font-size: 2rem;
+		letter-spacing: -1px;
+		padding: 3rem 0 0 2.344rem;
+	}
 	.service-wrap {
 		font-family: 'Inter', sans-serif;
 		height: fit-content;
+		letter-spacing: -1px;
 	}
 
 	.service-title {
-		font-size: clamp(1.7rem, 1.7vw, 10rem);
+		font-size: clamp(1.5rem, 1.5vw, 9rem);
+		letter-spacing: -1px;
 	}
 	.cell-container {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 3rem;
+		padding: 3rem 3rem 5rem 3rem;
 		gap: 2rem 1rem;
 	}
 	.cell {

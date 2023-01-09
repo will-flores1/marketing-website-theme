@@ -7,6 +7,23 @@
 	let y: number = 0;
 	let prevY: number = 0;
 
+	let menuOpen = false;
+	let menu = 'menu-screen hide-menu';
+
+	function deriveMenu() {
+		if (menuOpen) {
+			menu = 'menu-screen show-menu';
+		} else {
+			menu = 'menu-screen hide-menu';
+		}
+		console.log(menu);
+	}
+
+	function toggleMenu() {
+		menuOpen = !menuOpen;
+		deriveMenu();
+	}
+
 	function deriveClass(y: number, dy: number) {
 		if (y < 56) {
 			return 'show';
@@ -21,7 +38,6 @@
 		}
 
 		if (dy > 0) {
-			console.log('hell');
 			return 'show';
 		}
 
@@ -50,7 +66,7 @@
 				</h1>
 			</a>
 		</div>
-		<nav>
+		<nav class="nav-menu">
 			<ul>
 				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 					<a href="/">Home</a>
@@ -60,6 +76,43 @@
 				</li>
 				<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
 					<a href="/contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<a class="corner-menu" href="#" on:click={toggleMenu}>
+			<svg
+				class="menu"
+				width="44"
+				height="44"
+				viewBox="0 0 17 17"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<rect width="5" height="5" fill="#fff" />
+				<rect y="6" width="5" height="5" fill="#fff" />
+				<rect y="12" width="5" height="5" fill="#fff" />
+				<rect x="6" width="5" height="5" fill="#fff" />
+				<rect x="6" y="6" width="5" height="5" fill="#fff" />
+				<rect x="6" y="12" width="5" height="5" fill="#fff" />
+				<rect x="12" width="5" height="5" fill="#fff" />
+				<rect x="12" y="6" width="5" height="5" fill="#fff" />
+				<rect x="12" y="12" width="5" height="5" fill="#fff" />
+			</svg>
+		</a>
+	</div>
+
+	<!--Menu -->
+	<div class={menu}>
+		<nav class="nav-menu-mobile">
+			<ul class="mobile-nav-list">
+				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+					<a href="/" on:click={toggleMenu}>Home</a>
+				</li>
+				<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+					<a href="/about" on:click={toggleMenu}>About</a>
+				</li>
+				<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
+					<a href="/contact" on:click={toggleMenu}>Contact</a>
 				</li>
 			</ul>
 		</nav>
@@ -99,21 +152,21 @@
 		color: var(--color-text-1);
 	}
 
-	nav {
+	.nav-menu {
 		display: flex;
 		align-items: center;
 	}
 
-	ul {
+	.nav-menu ul {
 		display: flex;
 		list-style: none;
 	}
 
-	li {
+	.nav-menu li {
 		position: relative;
 	}
 
-	li[aria-current='page']::before {
+	.nav-menu li[aria-current='page']::before {
 		--size: 6px;
 		content: '';
 		width: 0;
@@ -125,7 +178,7 @@
 		border-top: var(--size) solid var(--color-text-1);
 	}
 
-	nav a {
+	.nav-menu a {
 		padding: 0 1rem;
 		color: var(--color-text-1);
 		font-weight: 600;
@@ -136,7 +189,7 @@
 		transition: color 0.2s linear;
 	}
 
-	a:hover {
+	.nav-menu a:hover {
 		color: var(--color-theme-1);
 		transition: color 0.5s ease-out;
 	}
@@ -147,5 +200,78 @@
 
 	.hide {
 		transform: translateY(-100%);
+	}
+
+	.corner-menu {
+		display: none;
+	}
+
+	.menu-screen {
+		display: none;
+	}
+
+	@media screen and (max-width: 992px) {
+		.corner-menu {
+			display: block;
+		}
+
+		.corner-menu:hover {
+			cursor: pointer;
+		}
+
+		.menu-screen {
+			display: block;
+			background-color: black;
+			height: 101vh;
+			width: 100vw;
+			position: fixed;
+			z-index: 2;
+			transition: all 0.2s ease;
+		}
+
+		.mobile-nav-list {
+			display: flex;
+			flex-direction: column;
+			justify-items: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.mobile-nav-list a {
+			color: white;
+		}
+
+		.mobile-nav-list li {
+			height: 30%;
+			width: 100%;
+			font-size: 3rem;
+			font-weight: 600;
+			letter-spacing: 2px;
+			font-family: 'inter', sans-serif;
+			/* border: 1px solid rgba(255, 255, 255, 0.096); */
+			display: grid;
+			place-items: center;
+		}
+
+		.mobile-nav-list a {
+			padding: 8rem 15rem;
+		}
+
+		.nav-menu-mobile {
+			height: 100%;
+		}
+		.hide-menu {
+			transform: translateX(-100%);
+		}
+		.show-menu {
+			transform: translateX(0%);
+		}
+
+		.nav-container {
+			justify-content: space-between;
+		}
+
+		.nav-menu {
+			display: none;
+		}
 	}
 </style>

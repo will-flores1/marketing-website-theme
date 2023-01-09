@@ -34,17 +34,24 @@
 </section>
 
 <style>
-	/* .image-wrapper {
+	.image-wrapper {
+		position: relative;
 		max-width: 100vw;
 		overflow: hidden;
-	} */
+	}
 	.background-img {
 		height: 100vh;
 		background-image: url(../lib/images/background-image.jpg);
 		position: relative;
 		z-index: -10;
-		background-attachment: fixed;
+		/* background-attachment: fixed; */
 		/* background-repeat: no-repeat; */
 		background-size: cover;
 	}
+
+	/* @media screen and (max-width: 500px) {
+		.background-img {
+			background-attachment: inital;
+		}
+	} */
 </style>

@@ -1,4 +1,6 @@
-<script></script>
+<script>
+	import manOnMoon from '../lib/images/manOnMoon.png';
+</script>
 
 <div class="wrap">
 	<div class="left-div">
@@ -8,7 +10,7 @@
 		</h1>
 	</div>
 	<div class="right-div">
-		<img class="man-on-moon" src="src/lib/images/manOnMoon.png" alt="Man on the moon" />
+		<img class="man-on-moon" src={manOnMoon} alt="Man on the moon" />
 	</div>
 </div>
 

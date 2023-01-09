@@ -1,4 +1,6 @@
-<script></script>
+<script>
+	import astronaut from '../lib/images/astronaut.png';
+</script>
 
 <div class="wrap">
 	<div class="left-div">
@@ -6,11 +8,7 @@
 		<a href="/">Let's talk business <span style="color: yellow;">&#8611;</span></a>
 	</div>
 	<div class="right-div">
-		<img
-			class="astronaut-img"
-			src="src/lib/images/astronaut.png"
-			alt="Astronaut riding on a horse in space."
-		/>
+		<img class="astronaut-img" src={astronaut} alt="Astronaut riding on a horse in space." />
 	</div>
 </div>
 

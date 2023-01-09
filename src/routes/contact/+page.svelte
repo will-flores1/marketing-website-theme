@@ -1,20 +1,50 @@
+<script lang="ts">
+	const valueDefaults = {
+		name: '',
+		email: '',
+		companyname: '',
+		contact: '',
+		inquirytype: 'Website creation',
+		numberofpages: '1',
+		budget: '$500-$2000',
+		timeline: 'Need to do it right',
+		message: ''
+	};
+	let values = { ...valueDefaults };
+
+	$: console.log(values);
+
+	async function reset(event: any) {
+		const formData = new FormData(event.target);
+		console.log([...formData]);
+		setTimeout(() => {
+			values = { ...valueDefaults };
+		}, 1000);
+		// alert("Thank you for your submission! We'll get back to you soon.");
+	}
+</script>
+
 <svelte:head>
 	<title>Contact</title>
 	<meta name="description" content="Contact this company" />
 </svelte:head>
 
 <div class="form-column">
-	<form
-		class="contact-form"
-		target="_blank"
-		action="https://formsubmit.co/your@email.com"
-		method="POST"
-	>
+	<form class="contact-form" action="https://formsubmit.co/wilfloresjr@gmail.com" method="POST">
+		<input type="hidden" name="_next" value="http://127.0.0.1:5174/thank-you" />
+		<input type="hidden" name="_subject" value="New submission!" />
 		<h1>Contact Us</h1>
 		<div class="form-row">
 			<div class="col">
 				<label for="name">Name<span style="color: red;">*</span></label>
-				<input type="text" name="name" class="form-control" placeholder="Full Name" required />
+				<input
+					type="text"
+					name="name"
+					class="form-control"
+					placeholder="Full Name"
+					bind:value={values.name}
+					required
+				/>
 			</div>
 			<div class="col">
 				<label for="email">Email<span style="color: red;">*</span></label>
@@ -23,6 +53,7 @@
 					name="email"
 					class="form-control"
 					placeholder="Email Address"
+					bind:value={values.email}
 					required
 				/>
 			</div>
@@ -30,8 +61,14 @@
 
 		<div class="form-row">
 			<div class="col">
-				<label for="company-name">Company Name<span style="color: red;">*</span></label>
-				<input type="text" name="company-name" placeholder="Name" required />
+				<label for="companyname">Company Name<span style="color: red;">*</span></label>
+				<input
+					type="text"
+					name="companyname"
+					placeholder="Name"
+					bind:value={values.companyname}
+					required
+				/>
 			</div>
 			<div class="col">
 				<label for="phoneNumber">Phone Number (optional)</label>
@@ -40,6 +77,7 @@
 					name="contact"
 					class="form-control"
 					placeholder="ex. 301-324-0234"
+					bind:value={values.contact}
 					pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 				/>
 			</div>
@@ -47,14 +85,19 @@
 
 		<div class="form-row">
 			<div class="col">
-				<label for="inquiry-type">Inquiry type<span style="color: red;">*</span></label>
-				<select name="inquiry-type" class="inquiry-type" required>
+				<label for="inquirytype">Inquiry type<span style="color: red;">*</span></label>
+				<select name="inquirytype" class="inquirytype" bind:value={values.inquirytype} required>
 					<option value="Website creation">Website creation</option>
 				</select>
 			</div>
 			<div class="col">
-				<label for="number-of-pages">Number of Pages<span style="color: red;">*</span></label>
-				<select name="number-of-pages" class="number-of-pages" required>
+				<label for="numberofpages">Number of Pages<span style="color: red;">*</span></label>
+				<select
+					name="numberofpages"
+					class="numberofpages"
+					bind:value={values.numberofpages}
+					required
+				>
 					<option value="1">1</option>
 					<option value="2-5">1-5</option>
 					<option value="5+">5-10</option>
@@ -66,7 +109,7 @@
 		<div class="form-row">
 			<div class="col">
 				<label for="budget">Budget<span style="color: red;">*</span></label>
-				<select name="budget" class="budget" required>
+				<select name="budget" class="budget" bind:value={values.budget} required>
 					<option value="$500-$2000">$500-$2000</option>
 					<option value="$2000-$4000">$2000-$4000</option>
 					<option value="$4000-$7000">$4000-$7000</option>
@@ -75,7 +118,7 @@
 			</div>
 			<div class="col">
 				<label for="timeline">Timeline <span style="color: red;">*</span></label>
-				<select name="timeline" class="timeline" required>
+				<select name="timeline" class="timeline" bind:value={values.timeline} required>
 					<option value="Need to do it right">Need to do it right</option>
 					<option value="1-2 weeks">1-4 weeks</option>
 					<option value="1-2 months">1-3 months</option>
@@ -90,10 +133,11 @@
 				class="form-text"
 				name="message"
 				rows="10"
+				bind:value={values.message}
 				required
 			/>
 		</div>
-		<button type="submit">Submit Form</button>
+		<button type="submit">Submit</button>
 	</form>
 </div>
 

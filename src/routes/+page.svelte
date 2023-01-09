@@ -34,17 +34,17 @@
 </section>
 
 <style>
-	.image-wrapper {
+	/* .image-wrapper {
 		max-width: 100vw;
 		overflow: hidden;
-	}
+	} */
 	.background-img {
 		height: 100vh;
 		background-image: url(../lib/images/background-image.jpg);
 		position: relative;
 		z-index: -10;
 		background-attachment: fixed;
-		background-repeat: no-repeat;
+		/* background-repeat: no-repeat; */
 		background-size: cover;
 	}
 </style>

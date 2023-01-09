@@ -241,7 +241,7 @@
 		}
 
 		.mobile-nav-list li {
-			height: 30%;
+			height: 28.5%;
 			width: 100%;
 			font-size: 3rem;
 			font-weight: 600;
@@ -253,7 +253,7 @@
 		}
 
 		.mobile-nav-list a {
-			/* padding: 8rem 15rem; */
+			padding: 2rem;
 		}
 
 		.nav-menu-mobile {

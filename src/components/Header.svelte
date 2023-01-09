@@ -71,9 +71,9 @@
 				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 					<a href="/">Home</a>
 				</li>
-				<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+				<!-- <li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 					<a href="/about">About</a>
-				</li>
+				</li> -->
 				<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
 					<a href="/contact">Contact</a>
 				</li>
@@ -108,9 +108,9 @@
 				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 					<a href="/" on:click={toggleMenu}>Home</a>
 				</li>
-				<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+				<!-- <li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 					<a href="/about" on:click={toggleMenu}>About</a>
-				</li>
+				</li> -->
 				<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
 					<a href="/contact" on:click={toggleMenu}>Contact</a>
 				</li>
@@ -127,7 +127,7 @@
 		transition: transform 250ms linear;
 		z-index: 1;
 		backdrop-filter: blur(10px);
-		background-color: rgba(0, 0, 0, 0.251);
+		background-color: rgba(0, 0, 0, 0.849);
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.772);
 	}
 
@@ -138,6 +138,8 @@
 		display: flex;
 		align-items: center;
 		gap: 2rem;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.logo-container {
@@ -272,6 +274,15 @@
 
 		.nav-menu {
 			display: none;
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		.logo-container {
+			font-size: 1.6rem;
+		}
+		.nav-container {
+			padding: 1rem;
 		}
 	}
 </style>

@@ -71,4 +71,16 @@
 			opacity: 1;
 		}
 	}
+
+	@media screen and (max-width: 992px) {
+		.hero {
+			margin: 10rem auto;
+		}
+	}
+
+	@media screen and (min-width: 500px) {
+		.hero {
+			margin: 15rem auto;
+		}
+	}
 </style>

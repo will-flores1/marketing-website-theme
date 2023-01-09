@@ -82,8 +82,8 @@
 		<a class="corner-menu" href={'#'} on:click={toggleMenu}>
 			<svg
 				class="menu"
-				width="44"
-				height="44"
+				width="38"
+				height="38"
 				viewBox="0 0 17 17"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +222,7 @@
 		.menu-screen {
 			display: block;
 			background-color: black;
-			height: 101vh;
+			height: 100vh;
 			width: 100vw;
 			position: fixed;
 			z-index: 2;

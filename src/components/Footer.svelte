@@ -17,7 +17,7 @@
 		color: white;
 		font-size: clamp(0.4rem, 2.5vw, 1.2rem);
 		letter-spacing: 2px;
-		padding: 4rem 2rem 1rem 2rem;
+		padding: 2rem 2rem 1rem 2rem;
 		margin: auto;
 		text-align: start;
 	}
@@ -29,14 +29,18 @@
 		margin-top: 1rem;
 	}
 
-	a {
-		color: white;
-		cursor: pointer;
-	}
-
 	.license {
 		padding-top: 6rem;
 		font-size: clamp(0.1rem, 1.8vw, 0.8rem);
 		text-align: center;
+	}
+
+	@media screen and (max-width: 992px) {
+		footer {
+			padding: 2rem;
+		}
+		.license {
+			padding-top: 3rem;
+		}
 	}
 </style>

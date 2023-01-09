@@ -1,5 +1,5 @@
 <div class="service-wrap">
-	<h1 style="text-align: start; padding:3rem 0 0 3rem;">What We Do</h1>
+	<h1 style="text-align: start; padding:2.344rem 0 0 2.344rem;">What We Do</h1>
 	<div class="cell-container">
 		<div class="cell">
 			<div class="text-wrap">
@@ -80,11 +80,13 @@
 
 	@media screen and (max-width: 992px) {
 		.cell-container {
+			padding: 2.344rem;
 			gap: 3rem;
 		}
 		h1 {
 			/* text-align: center; */
-			font-size: 4rem;
+			font-size: 2.4rem;
+			letter-spacing: 0.06px;
 			font-weight: 600;
 		}
 

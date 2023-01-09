@@ -5,7 +5,9 @@
 <div class="wrap">
 	<div class="left-div">
 		<h1 class="tag-line">About you, not about us.</h1>
-		<a href="/">Let's talk business <span style="color: yellow;">&#8611;</span></a>
+		<a href="/contact" class="business"
+			>Let's talk business <span style="color: yellow;">&#8611;</span></a
+		>
 	</div>
 	<div class="right-div">
 		<img class="astronaut-img" src={astronaut} alt="Astronaut riding on a horse in space." />
@@ -70,5 +72,29 @@
 	}
 
 	@media screen and (max-width: 992px) {
+		.tag-line {
+			font-size: 1.4rem;
+			padding: 1rem;
+		}
+		a {
+			padding: 0 1rem;
+		}
+
+		.astronaut-img {
+			width: clamp(6.5rem, 20vw, 25rem);
+		}
+	}
+
+	@media screen and (min-width: 500px) {
+		.tag-line {
+			font-size: 2.2rem;
+		}
+		.business {
+			padding: 0 1rem;
+			font-size: 2rem;
+		}
+		a {
+			padding: 1rem;
+		}
 	}
 </style>

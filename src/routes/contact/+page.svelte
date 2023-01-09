@@ -200,4 +200,10 @@
 	button:hover {
 		cursor: pointer;
 	}
+
+	@media screen and (max-width: 992px) {
+		.contact-form {
+			padding: 1.5rem;
+		}
+	}
 </style>

@@ -20,9 +20,4 @@
 </div>
 
 <style>
-	footer {
-		background-color: white;
-	}
-	@media (min-width: 480px) {
-	}
 </style>

@@ -79,7 +79,7 @@
 				</li>
 			</ul>
 		</nav>
-		<a class="corner-menu" href="#" on:click={toggleMenu}>
+		<a class="corner-menu" href={'#'} on:click={toggleMenu}>
 			<svg
 				class="menu"
 				width="44"

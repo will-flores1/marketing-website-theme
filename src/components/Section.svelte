@@ -3,7 +3,7 @@
 <div class="wrap">
 	<div class="left-div">
 		<h1 class="tag-line">About you, not about us.</h1>
-		<a href="/">Let's talk business &#8611;</a>
+		<a href="/">Let's talk business <span style="color: yellow;">&#8611;</span></a>
 	</div>
 	<div class="right-div">
 		<img
@@ -62,13 +62,15 @@
 		padding: 0 3rem;
 		text-decoration: none;
 		color: white;
+		transition: all 0.2s ease;
 		/* margin: 0 auto; */
 	}
 	a:hover {
+		/* text-decoration: underline; */
 		color: yellow;
 		cursor: pointer;
 	}
 
-	@media (min-width: 1006px) {
+	@media screen and (max-width: 992px) {
 	}
 </style>

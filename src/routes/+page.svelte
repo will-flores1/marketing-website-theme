@@ -19,11 +19,11 @@
 </svelte:head>
 
 <section>
-	<div>
+	<div class="image-wrapper">
 		<div
 			class="background-img"
-			style="transform: translateY({y * 0.4}px) scale3d({y * 0.0001 + 1}, {y * 0.0001 + 1}, {y *
-				0.0001 +
+			style="transform: translateY({y * 0.4}px) scale3d({y * 0.00005 + 1}, {y * 0.00005 + 1}, {y *
+				0.00005 +
 				1}); filter: blur({y * 0.005 + 0.1}px);"
 		/>
 		<Hero />
@@ -34,14 +34,17 @@
 </section>
 
 <style>
+	.image-wrapper {
+		max-width: 100vw;
+		overflow: hidden;
+	}
 	.background-img {
 		height: 100vh;
-		/* height: 100%; */
 		background-image: url(../lib/images/background-image.jpg);
 		position: relative;
 		z-index: -10;
 		background-attachment: fixed;
-		/* background-size: 100%; */
+		background-repeat: no-repeat;
 		background-size: cover;
 	}
 </style>

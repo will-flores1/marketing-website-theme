@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Form Submitted</title>
+	<meta name="description" content="Form was submitted." />
+</svelte:head>
+
 <div class="thanks">
 	Form submitted. We'll get back to you soon. <a href="/">Return to Home Page.</a>
 </div>

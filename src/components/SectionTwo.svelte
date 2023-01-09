@@ -64,17 +64,18 @@
 	@media screen and (max-width: 992px) {
 		.tag-line {
 			padding: 1rem;
-			font-size: 1.4rem;
+			font-size: 2rem;
 		}
+
 		.man-on-moon {
 			width: clamp(6.5rem, 20vw, 25rem);
 			border-radius: 1px 0.7rem 1px 0;
 			box-shadow: var(--text-shadow-1);
 		}
 	}
-	@media screen and (min-width: 500px) {
+	@media screen and (max-width: 500px) {
 		.tag-line {
-			font-size: 2.2rem;
+			font-size: 1.5rem;
 			padding: 1rem;
 		}
 	}

@@ -31,7 +31,7 @@
 
 <div class="form-column">
 	<form class="contact-form" action="https://formsubmit.co/wilfloresjr@gmail.com" method="POST">
-		<input type="hidden" name="_next" value="http://127.0.0.1:5174/thank-you" />
+		<input type="hidden" name="_next" value="https://rocket-websites.vercel.app/thank-you" />
 		<input type="hidden" name="_subject" value="New submission!" />
 		<h1>Contact Us</h1>
 		<div class="form-row">

@@ -40,7 +40,7 @@
 	}
 	.background-img {
 		height: 100vh;
-		background-image: url(../lib/images/background-image.jpg);
+		background-image: url(src/lib/images/background-image.jpg);
 		position: relative;
 		z-index: -10;
 		background-attachment: fixed;

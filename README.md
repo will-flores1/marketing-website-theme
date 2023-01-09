@@ -2,14 +2,15 @@
 
 [x] Fix +layout.svelte background image and set it to home page background image
 [x] Create Contact Form page
-[] Update Form submit email
+[x] Update Form submit email
 [x] Scale2d background image on scroll
 [] Fix Footer
-[] Fix Header
-[] Create Service Section
-[] Add copy headlines and descriptions
-[] Add designs
-[] Add icons
+[x] Fix Header
+[x] Create Service Section
+[] Add copy headlines and descriptions !!!
+[] Add designs !!
+[] Add icons !!!
+[] Make it more obvious you're a website design company
 
 # create-svelte
 

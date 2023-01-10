@@ -128,9 +128,9 @@
 		top: 0;
 		transition: transform 250ms linear;
 		z-index: 1;
-		backdrop-filter: blur(10px);
-		background-color: rgba(0, 0, 0, 0.849);
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.772);
+		backdrop-filter: blur(4px);
+		background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+		/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.772); */
 	}
 
 	.nav-container {
@@ -151,6 +151,10 @@
 		color: var(--color-text-1);
 	}
 
+	.logo-link {
+		height: fit-content;
+	}
+
 	.logo-container-websites-name {
 		font-weight: 600;
 		color: var(--color-text-1);
@@ -159,6 +163,7 @@
 	.nav-menu {
 		display: flex;
 		align-items: center;
+		height: 100%;
 	}
 
 	.nav-menu ul {
@@ -170,23 +175,12 @@
 		position: relative;
 	}
 
-	.nav-menu li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: -10px;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-text-1);
-	}
-
 	.nav-menu a {
 		padding: 0 1rem;
 		color: var(--color-text-1);
 		font-weight: 600;
 		letter-spacing: 1px;
+		height: 100%;
 		font-size: 1.1625rem;
 		letter-spacing: 0.1em;
 		text-decoration: none;

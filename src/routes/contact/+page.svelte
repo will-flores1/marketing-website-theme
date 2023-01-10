@@ -249,7 +249,7 @@
 
 	@media screen and (max-width: 992px) {
 		.contact-form {
-			padding: 5rem 1.5rem 1.5rem 1.5rem;
+			padding: 0rem 1.5rem 1.5rem 1.5rem;
 		}
 	}
 </style>

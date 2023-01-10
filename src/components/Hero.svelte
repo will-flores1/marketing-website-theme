@@ -55,9 +55,11 @@
 		text-shadow: var(--text-shadow-0);
 		border: 2px solid rgb(246, 25, 128);
 		color: white;
-		border-radius: 4px;
 		animation: fadeIn 0.5s;
 		transition: all 0.3s ease;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
 	}
 
 	.button-1:hover {

@@ -57,8 +57,8 @@
 		color: white;
 		animation: fadeIn 0.5s;
 		transition: all 0.3s ease;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
+		-webkit-border-radius: 5%;
+		-moz-border-radius: 5%;
 		border-radius: 4px;
 	}
 

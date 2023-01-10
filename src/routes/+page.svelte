@@ -28,9 +28,9 @@
 		/>
 		<Hero />
 	</div>
+	<Services />
 	<Section />
 	<SectionTwo />
-	<Services />
 </section>
 
 <style>

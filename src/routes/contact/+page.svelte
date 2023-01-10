@@ -120,9 +120,10 @@
 				<label for="timeline">Timeline <span style="color: red;">*</span></label>
 				<select name="timeline" class="timeline" bind:value={values.timeline} required>
 					<option value="Need to do it right">Need to do it right</option>
-					<option value="1-2 weeks">1-4 weeks</option>
-					<option value="1-2 months">1-3 months</option>
-					<option value="2-4 months">3-5 months</option>
+					<option value="1-2 weeks">1-2 weeks</option>
+					<option value="2-4 weeks">2-4 weeks</option>
+					<option value="1-3 months">1-3 months</option>
+					<option value="3-5 months">3-5 months</option>
 				</select>
 			</div>
 		</div>
@@ -248,6 +249,12 @@
 	}
 
 	@media screen and (max-width: 992px) {
+		.contact-form {
+			padding: 4rem 1.5rem 1.5rem 1.5rem;
+		}
+	}
+
+	@media screen and (max-width: 500px) {
 		.contact-form {
 			padding: 0rem 1.5rem 1.5rem 1.5rem;
 		}

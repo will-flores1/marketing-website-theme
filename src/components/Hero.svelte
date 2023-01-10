@@ -28,12 +28,10 @@
 	}
 
 	h1 {
-		/* font-family: var(--font-body); */
 		font-size: clamp(2.5rem, 12vw, 6.5rem);
-		/* font-size: 4.3rem; */
 		font-weight: 600;
 		color: rgb(251, 251, 251);
-		/* text-shadow: var(--text-shadow-0); */
+		text-shadow: var(--text-shadow-0);
 		animation: fadeIn 0.5s;
 	}
 	p {
@@ -41,6 +39,7 @@
 		font-weight: 400;
 		padding: 1.8rem 0 0 0;
 		color: var(--color-text-1);
+		text-shadow: var(--text-shadow-0);
 		animation: fadeIn 0.5s;
 	}
 
@@ -50,6 +49,7 @@
 		font-size: clamp(1.4rem, 1.5vw, 9rem);
 		max-width: 17rem;
 		background-color: rgb(246, 25, 128);
+		text-shadow: var(--text-shadow-0);
 		border: 2px solid rgb(246, 25, 128);
 		color: white;
 		border-radius: 4px;

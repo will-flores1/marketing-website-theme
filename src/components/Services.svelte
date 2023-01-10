@@ -236,7 +236,7 @@
 	.hover-service {
 		fill: black;
 		stroke: black;
-		transition: all 0.3s ease;
+		transition: color fill stroke 0.3s ease;
 	}
 
 	.hover-service:hover {
@@ -246,6 +246,9 @@
 	}
 
 	@media screen and (max-width: 992px) {
+		.what-we-do {
+			padding: 37.5px 0 0 37.5px;
+		}
 		.cell-container {
 			padding: 2.344rem;
 			gap: 3rem;

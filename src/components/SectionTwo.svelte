@@ -29,7 +29,7 @@
 		height: 99.8%;
 		color: white;
 		border-right: 1px solid rgba(255, 255, 255, 0.362);
-		border-bottom: 1px solid rgba(255, 255, 255, 0.362);
+		/* border-bottom: 1px solid rgba(255, 255, 255, 0.362); */
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

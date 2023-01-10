@@ -46,17 +46,16 @@
 	.button-1 {
 		font-family: var(--font-body);
 		font-weight: 600;
-		outline: 1px solid white;
 		margin-top: 1.9rem;
 		padding: 1rem 3rem;
 		font-size: clamp(1.4rem, 1.5vw, 9rem);
 		max-width: 17rem;
 		background-color: var(--color-theme-1);
 		text-shadow: var(--text-shadow-0);
-		border: 2px solid rgb(246, 25, 128);
 		color: white;
 		animation: fadeIn 0.5s;
 		transition: all 0.3s ease;
+		border: 2px solid white;
 		-webkit-border-radius: 5%;
 		-moz-border-radius: 5%;
 		border-radius: 4px;

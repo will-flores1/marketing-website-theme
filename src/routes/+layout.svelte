@@ -4,7 +4,7 @@
 	import './styles.css';
 
 	let header: any;
-	$: console.log(header);
+	// $: console.log(header);
 </script>
 
 <svelte:body on:scroll={header} />

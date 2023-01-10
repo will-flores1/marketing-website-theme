@@ -5,7 +5,7 @@
 	import Services from '../components/Services.svelte';
 
 	let y = 0;
-	$: console.log(y * 0.005);
+	// $: console.log(y * 0.005);
 </script>
 
 <svelte:window bind:scrollY={y} />

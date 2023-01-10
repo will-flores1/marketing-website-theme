@@ -16,7 +16,7 @@
 
 	async function reset(event: any) {
 		const formData = new FormData(event.target);
-		console.log([...formData]);
+		// console.log([...formData]);
 		setTimeout(() => {
 			values = { ...valueDefaults };
 		}, 1000);
@@ -249,7 +249,7 @@
 
 	@media screen and (max-width: 992px) {
 		.contact-form {
-			padding: 1.5rem;
+			padding: 5rem 1.5rem 1.5rem 1.5rem;
 		}
 	}
 </style>

@@ -17,7 +17,7 @@
 		} else {
 			menu = 'menu-screen hide-menu';
 		}
-		console.log(menu);
+		// console.log(menu);
 	}
 
 	function toggleMenu() {
@@ -194,7 +194,7 @@
 	}
 
 	.nav-menu a:hover {
-		color: rgba(255, 255, 255, 0.383);
+		color: var(--color-theme-1);
 		transition: color 0.5s ease-out;
 	}
 
@@ -279,11 +279,11 @@
 	}
 
 	@media screen and (max-width: 500px) {
-		.logo-container {
-			font-size: 1.6rem;
+		header {
+			height: fit-content;
 		}
 		.nav-container {
-			padding: 1rem;
+			padding: 0.5rem 1rem;
 		}
 	}
 </style>

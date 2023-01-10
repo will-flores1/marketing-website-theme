@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import logo from '../lib/images/logo.svg';
 
 	let offset = 0;
 	let tolerance = 0;
@@ -53,6 +54,10 @@
 	}
 
 	$: headerClass = updateClass(y);
+
+	const text = {
+		companyName: 'globewebsites'
+	};
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -60,10 +65,7 @@
 	<div class="nav-container">
 		<div class="corner">
 			<a href="/">
-				<h1 class="logo-container">
-					rocket
-					<span class="logo-container-websites-name">websites</span>
-				</h1>
+				<img src={logo} alt="logo" width="180" />
 			</a>
 		</div>
 		<nav class="nav-menu">
@@ -192,7 +194,7 @@
 	}
 
 	.nav-menu a:hover {
-		color: var(--color-theme-1);
+		color: rgba(255, 255, 255, 0.383);
 		transition: color 0.5s ease-out;
 	}
 
@@ -249,7 +251,6 @@
 			font-weight: 600;
 			letter-spacing: 2px;
 			font-family: 'inter', sans-serif;
-			/* border: 1px solid rgba(255, 255, 255, 0.096); */
 			display: grid;
 			place-items: center;
 		}

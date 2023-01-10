@@ -6,7 +6,7 @@
 	.license {
 		font-size: clamp(0.1rem, 1.9vw, 0.9rem);
 		text-align: center;
-		padding: 2rem;
+		padding: 0.2rem;
 		background-color: black;
 		color: white;
 	}

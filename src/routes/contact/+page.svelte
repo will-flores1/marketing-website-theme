@@ -145,6 +145,8 @@
 	h1 {
 		font-weight: 300;
 		font-size: clamp(4rem, 4vw, 8rem);
+		font-family: 'Sofia Sans Condensed', sans-serif;
+		font-weight: 400;
 	}
 
 	form {
@@ -198,7 +200,7 @@
 		display: inline-block;
 		margin: 0 0 0;
 		padding: 22px 20px;
-		font-family: inherit;
+		font-family: sans-serif;
 		font-size: 16px;
 		line-height: 24px;
 		font-weight: inherit;

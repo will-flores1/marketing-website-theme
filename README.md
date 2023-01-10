@@ -4,13 +4,14 @@
 [x] Create Contact Form page
 [x] Update Form submit email
 [x] Scale2d background image on scroll
-[] Fix Footer
+[x] Fix Footer
 [x] Fix Header
 [x] Create Service Section
 [] Add copy headlines and descriptions !!!
 [] Add designs !!
-[] Add icons !!!
+[x] Add icons !!!
 [] Make it more obvious you're a website design company
+[] Add a privacy statement, terms and conditions, and cookie notice to your website.
 
 # create-svelte
 

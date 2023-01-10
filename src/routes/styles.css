@@ -5,7 +5,7 @@
 	--font-title: 'Nunito', sans-serif;
 	--color-bg-0: rgb(255, 255, 255);
 	--color-bg-1: #260835;
-	--color-theme-1: #f61980;
+	--color-theme-1: #d62828;
 	--color-theme-2: #3e1465;
 	--color-text: rgb(0, 0, 0);
 	--color-text-1: rgb(251, 251, 251);
@@ -145,4 +145,17 @@ q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.hidden {
+	opacity: 0;
+	filter: blur(3px);
+	transform: translateX(-5%);
+}
+
+.shown {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+	transition: all 2.4s ease;
 }

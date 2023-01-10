@@ -1,9 +1,9 @@
 <script>
-	import Objerver from '../utils/Objerver.svelte';
+	import Observer from '../utils/Observer.svelte';
 	let width = 55;
 </script>
 
-<Objerver>
+<Observer>
 	<div class="service-wrap">
 		<h1 class="what-we-do hidden">WHAT WE DO</h1>
 		<div class="cell-container">
@@ -182,7 +182,7 @@
 			</div>
 		</div>
 	</div>
-</Objerver>
+</Observer>
 
 <style>
 	.what-we-do {

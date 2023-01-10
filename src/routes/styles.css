@@ -17,8 +17,9 @@
 	color: var(--color-text);
 }
 
-* {
+body {
 	box-sizing: border-box;
+	display: block;
 }
 
 html,

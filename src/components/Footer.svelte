@@ -13,7 +13,7 @@
 
 	@media screen and (max-width: 992px) {
 		.license {
-			padding-top: 3rem;
+			padding-top: 0.2rem;
 		}
 	}
 </style>

@@ -37,18 +37,21 @@
 	p {
 		font-size: clamp(1.8rem, 3.5vw, 2rem);
 		font-weight: 400;
-		padding: 1.8rem 0 0 0;
-		color: var(--color-text-1);
+		padding-top: 1rem;
+		color: rgb(240, 240, 240);
 		text-shadow: var(--text-shadow-0);
 		animation: fadeIn 0.5s;
 	}
 
 	.button-1 {
+		font-family: var(--font-body);
+		font-weight: 600;
+		outline: 1px solid white;
 		margin-top: 1.9rem;
 		padding: 1rem 3rem;
 		font-size: clamp(1.4rem, 1.5vw, 9rem);
 		max-width: 17rem;
-		background-color: rgb(246, 25, 128);
+		background-color: var(--color-theme-1);
 		text-shadow: var(--text-shadow-0);
 		border: 2px solid rgb(246, 25, 128);
 		color: white;
@@ -59,8 +62,7 @@
 
 	.button-1:hover {
 		cursor: pointer;
-		background-color: rgb(211, 0, 99);
-		color: white;
+		background-color: #d62828d6;
 	}
 
 	@keyframes fadeIn {
@@ -74,13 +76,16 @@
 
 	@media screen and (max-width: 992px) {
 		.hero {
-			margin: 10rem auto;
+			margin: 12rem auto;
 		}
 	}
 
-	@media screen and (min-width: 500px) {
+	@media screen and (max-width: 500px) {
+		h1 {
+			font-size: 4.5rem;
+		}
 		.hero {
-			margin: 15rem auto;
+			margin: 7rem auto;
 		}
 	}
 </style>

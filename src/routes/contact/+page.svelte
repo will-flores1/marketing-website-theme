@@ -83,7 +83,14 @@
 		</div>
 		<div class="form-message">
 			<label for="message">Message or Project Description</label>
-			<textarea class="form-text" name="message" rows="10" bind:value={values.message} required />
+			<textarea
+				class="form-text"
+				name="message"
+				rows="7"
+				placeholder="If it helps, some examples mention target launch date, your top goals of the project, and examples of websites you admire."
+				bind:value={values.message}
+				required
+			/>
 		</div>
 		<button type="submit">Submit</button>
 	</form>

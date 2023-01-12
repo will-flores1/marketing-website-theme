@@ -7,9 +7,9 @@
 
 <Observer let:observe>
 	<div class="service-wrap">
-		<h1 class="what-we-do" use:observe>WHAT WE DO</h1>
+		<h1 class="what-we-do" data-hidden="true" use:observe>WHAT WE DO</h1>
 		<div class="cell-container">
-			<div class="cell " use:observe>
+			<div class="cell" data-hidden="true" use:observe>
 				<div class="text-wrap">
 					<div class="hover-service">
 						<svg
@@ -43,7 +43,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="cell " use:observe>
+			<div class="cell " data-hidden="true" use:observe>
 				<div class="text-wrap">
 					<div class="hover-service">
 						<svg
@@ -78,7 +78,7 @@
 				</div>
 				<p />
 			</div>
-			<div class="cell " use:observe>
+			<div class="cell " data-hidden="true" use:observe>
 				<div class="text-wrap">
 					<div class="hover-service">
 						<svg
@@ -126,7 +126,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="cell " use:observe>
+			<div class="cell " data-hidden="true" use:observe>
 				<div class="text-wrap">
 					<div class="hover-service">
 						<svg xmlns="http://www.w3.org/2000/svg" {width} x="0px" y="0px" viewBox="0 0 32 32">

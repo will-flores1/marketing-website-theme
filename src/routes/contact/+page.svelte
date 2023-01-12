@@ -27,7 +27,6 @@
 
 <div class="form-column">
 	<form class="contact-form" action="https://formsubmit.co/wilfloresjr@gmail.com" method="POST">
-		<input type="hidden" name="_next" value="https://rocket-websites.vercel.app/thank-you" />
 		<input type="hidden" name="_subject" value="New submission!" />
 		<h1>Contact Us</h1>
 		<div class="form-row">
@@ -69,7 +68,7 @@
 			<div class="col">
 				<label for="phoneNumber"
 					>Phone Number<span style="color: red;">*</span>
-					<span style="color: rgba(0, 0, 0, 0.5)">(format: 234-234-2345)</span></label
+					<span style="color: rgba(0, 0, 0, 0.5)">(format. 234-234-2345)</span></label
 				>
 				<input
 					type="tel"
@@ -84,14 +83,7 @@
 		</div>
 		<div class="form-message">
 			<label for="message">Message or Project Description</label>
-			<textarea
-				placeholder="If it helps, some examples mention target launch date, your top goals of the project, and examples of websites you admire."
-				class="form-text"
-				name="message"
-				rows="10"
-				bind:value={values.message}
-				required
-			/>
+			<textarea class="form-text" name="message" rows="10" bind:value={values.message} required />
 		</div>
 		<button type="submit">Submit</button>
 	</form>
@@ -126,7 +118,6 @@
 	.form-message {
 		display: flex;
 		flex-wrap: wrap;
-		width: 100%;
 		flex: 1;
 	}
 
@@ -217,6 +208,12 @@
 	}
 
 	@media screen and (max-width: 500px) {
+		input {
+			min-width: 0;
+		}
+		.form-column {
+			margin: auto;
+		}
 		.contact-form {
 			padding: 0rem 1.5rem 1.5rem 1.5rem;
 		}

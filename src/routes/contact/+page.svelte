@@ -76,7 +76,7 @@
 					class="form-control"
 					placeholder="ex. 301-324-0234"
 					bind:value={values.contact}
-					pattern={'[0-9]{3}-[0-9]{3}-[0-9]{4}'}
+					pattern={'[0-9]{10}'}
 					required
 				/>
 			</div>

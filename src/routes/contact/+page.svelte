@@ -66,15 +66,12 @@
 				/>
 			</div>
 			<div class="col">
-				<label for="phoneNumber"
-					>Phone Number<span style="color: red;">*</span>
-					<span style="color: rgba(0, 0, 0, 0.5)">(format: xxx-xxx-xxxx)</span></label
-				>
+				<label for="phoneNumber">Phone Number<span style="color: red;">*</span></label>
 				<input
 					type="tel"
 					name="contact"
 					class="form-control"
-					placeholder="ex. 301-324-0234"
+					placeholder="ex. 3013240234"
 					bind:value={values.contact}
 					pattern={'[0-9]{10}'}
 					required

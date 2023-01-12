@@ -68,7 +68,7 @@
 			<div class="col">
 				<label for="phoneNumber"
 					>Phone Number<span style="color: red;">*</span>
-					<span style="color: rgba(0, 0, 0, 0.5)">(format. 234-234-2345)</span></label
+					<span style="color: rgba(0, 0, 0, 0.5)">(format: xxx-xxx-xxxx)</span></label
 				>
 				<input
 					type="tel"

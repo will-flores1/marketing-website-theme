@@ -10,7 +10,6 @@
 
 	$: if (mounted && elements.some((el: any) => el)) {
 		elements.forEach((el: any) => {
-			el.dataset.hidden = true;
 			observer.observe(el);
 		});
 	}

@@ -147,16 +147,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-.hidden {
-	opacity: 0;
-	filter: blur(3px);
-	transform: translateX(-5%);
-}
-
-.shown {
-	opacity: 1;
-	filter: blur(0);
-	transform: translateX(0);
-	transition: all 2.4s ease;
-}

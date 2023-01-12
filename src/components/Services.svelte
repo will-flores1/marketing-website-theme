@@ -1,13 +1,15 @@
 <script>
+	// @ts-nocheck
+
 	import Observer from '../utils/Observer.svelte';
 	let width = 55;
 </script>
 
-<Observer>
+<Observer let:observe>
 	<div class="service-wrap">
-		<h1 class="what-we-do hidden">WHAT WE DO</h1>
+		<h1 class="what-we-do" use:observe>WHAT WE DO</h1>
 		<div class="cell-container">
-			<div class="cell hidden">
+			<div class="cell " use:observe>
 				<div class="text-wrap">
 					<div class="hover-service">
 						<svg
@@ -41,7 +43,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="cell hidden">
+			<div class="cell " use:observe>
 				<div class="text-wrap">
 					<div class="hover-service">
 						<svg
@@ -76,7 +78,7 @@
 				</div>
 				<p />
 			</div>
-			<div class="cell hidden">
+			<div class="cell " use:observe>
 				<div class="text-wrap">
 					<div class="hover-service">
 						<svg
@@ -124,7 +126,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="cell hidden">
+			<div class="cell " use:observe>
 				<div class="text-wrap">
 					<div class="hover-service">
 						<svg xmlns="http://www.w3.org/2000/svg" {width} x="0px" y="0px" viewBox="0 0 32 32">
@@ -190,8 +192,10 @@
 		font-size: 7.5rem;
 		letter-spacing: -1px;
 		padding: 3rem 3rem 0 3rem;
+		transition: all 2s ease-in;
 	}
 	.service-wrap {
+		padding: 2rem 0;
 		display: flex;
 		font-family: 'Inter', sans-serif;
 		height: fit-content;
@@ -210,6 +214,7 @@
 	}
 	.cell {
 		width: 48%;
+		transition: all 2s ease-in;
 	}
 
 	.text-wrap {

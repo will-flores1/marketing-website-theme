@@ -12,16 +12,12 @@
 	};
 	let values = { ...valueDefaults };
 
-	$: console.log(values);
-
-	async function reset(event: any) {
-		const formData = new FormData(event.target);
-		// console.log([...formData]);
-		setTimeout(() => {
-			values = { ...valueDefaults };
-		}, 1000);
-		// alert("Thank you for your submission! We'll get back to you soon.");
-	}
+	// async function reset(event: any) {
+	// 	const formData = new FormData(event.target);
+	// 	setTimeout(() => {
+	// 		values = { ...valueDefaults };
+	// 	}, 1000);
+	// }
 </script>
 
 <svelte:head>
@@ -71,63 +67,22 @@
 				/>
 			</div>
 			<div class="col">
-				<label for="phoneNumber">Phone Number (optional)</label>
+				<label for="phoneNumber"
+					>Phone Number<span style="color: red;">*</span>
+					<span style="color: rgba(0, 0, 0, 0.5)">(format: 234-234-2345)</span></label
+				>
 				<input
 					type="tel"
 					name="contact"
 					class="form-control"
 					placeholder="ex. 301-324-0234"
 					bind:value={values.contact}
-					pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+					pattern={'[0-9]{3}-[0-9]{3}-[0-9]{4}'}
+					required
 				/>
 			</div>
 		</div>
-
-		<div class="form-row">
-			<div class="col">
-				<label for="inquirytype">Inquiry type<span style="color: red;">*</span></label>
-				<select name="inquirytype" class="inquirytype" bind:value={values.inquirytype} required>
-					<option value="Website creation">Website creation</option>
-				</select>
-			</div>
-			<div class="col">
-				<label for="numberofpages">Number of Pages<span style="color: red;">*</span></label>
-				<select
-					name="numberofpages"
-					class="numberofpages"
-					bind:value={values.numberofpages}
-					required
-				>
-					<option value="1">1</option>
-					<option value="2-5">1-5</option>
-					<option value="5+">5-10</option>
-					<option value="10+">10+</option>
-				</select>
-			</div>
-		</div>
-
-		<div class="form-row">
-			<div class="col">
-				<label for="budget">Budget<span style="color: red;">*</span></label>
-				<select name="budget" class="budget" bind:value={values.budget} required>
-					<option value="$500-$2000">$500-$2000</option>
-					<option value="$2000-$4000">$2000-$4000</option>
-					<option value="$4000-$7000">$4000-$7000</option>
-					<option value="$7000+">$7000+</option>
-				</select>
-			</div>
-			<div class="col">
-				<label for="timeline">Timeline <span style="color: red;">*</span></label>
-				<select name="timeline" class="timeline" bind:value={values.timeline} required>
-					<option value="Need to do it right">Need to do it right</option>
-					<option value="1-2 weeks">1-2 weeks</option>
-					<option value="2-4 weeks">2-4 weeks</option>
-					<option value="1-3 months">1-3 months</option>
-					<option value="3-5 months">3-5 months</option>
-				</select>
-			</div>
-		</div>
-		<div>
+		<div class="form-message">
 			<label for="message">Message or Project Description</label>
 			<textarea
 				placeholder="If it helps, some examples mention target launch date, your top goals of the project, and examples of websites you admire."
@@ -166,6 +121,13 @@
 		flex-wrap: wrap;
 		flex: 1;
 		gap: 2rem;
+	}
+
+	.form-message {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		flex: 1;
 	}
 
 	.col {
@@ -227,7 +189,7 @@
 		margin: 0 0 0;
 		padding: 22px 20px;
 		font-family: sans-serif;
-		min-width: 100%;
+		width: 100%;
 	}
 	.form-text::placeholder {
 		color: rgba(0, 0, 0, 0.472);
